@@ -96,7 +96,8 @@ function check_secrets {
         done
     fi
 
-    custom_allowed_secrets=$(bashio::config 'secrets')
+    custom_allowed_secrets=$(bashio::config 'allowed_secrets')
+    bashio::log.info allowed secrets: "${custom_allowed_secrets[@]}"
     if [ ${#custom_allowed_secrets[@]} -gt 0 ]; then
         bashio::log.info 'Add custom allowed secrets'
         for allowed_secret in "${custom_allowed_secrets[@]}"; do
