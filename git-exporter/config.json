@@ -13,7 +13,7 @@
   ],
   "startup": "once",
   "boot": "manual",
-  "image": "ghcr.io/bjeanes/poeschl-ha-git-exporter-{arch}",
+  "image": "ghcr.io/bjeanes/ha-git-exporter-fork-{arch}",
   "hassio_api": true,
   "hassio_role": "manager",
   "map": [
